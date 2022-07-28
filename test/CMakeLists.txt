@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.12)
 set(TEST_PROJECT_NAME test)
 
 add_executable(${TEST_PROJECT_NAME}
-	src/main.cpp
+	src/test.cpp
 )
 
 target_link_libraries(${TEST_PROJECT_NAME} core)
