@@ -4,8 +4,7 @@
 
 namespace Core {
 
-    int main(void)
-    {
+    int Init::main() {
         GLFWwindow* window;
 
         if (!glfwInit())
@@ -19,6 +18,9 @@ namespace Core {
         }
 
         glfwMakeContextCurrent(window);
+
+
+        GLFWwindow* glWindow = glfwGetCurrentContext();
 
         while (!glfwWindowShouldClose(window))
         {
@@ -35,4 +37,10 @@ namespace Core {
         glfwTerminate();
         return 0;
     }
+
+    void Init::cube() {
+        std::cout << "Cube was initilize!";
+        main();
+    }
+
 }
